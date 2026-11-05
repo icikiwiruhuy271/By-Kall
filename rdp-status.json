@@ -53,5 +53,57 @@
     "audio_output": "rdp_playback_enabled",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "microphone": "rdp_capture_enabled"
+  },
+  "grafis": {
+    "vulkan": "lavapipe (CPU) / loader vulkan-1.dll tidak ada",
+    "mesa": "26.2.6",
+    "opengl": "llvmpipe (Mesa 26.2.6) - belum terverifikasi",
+    "mode": "software",
+    "files": "vulkan_lvp.dll",
+    "dir": "C:\\XyRDP\\grafis",
+    "adapters": "Microsoft Hyper-V Video",
+    "debug": "loader-tidak-ada",
+    "install": "belum",
+    "loader": "",
+    "note": "Pasang OpenGL software ke System32 gagal (belum). Vulkan lavapipe & WARP tetap aktif; DLL Mesa tersedia di C:\\XyRDP\\grafis\\gl untuk pemakaian per-aplikasi."
+  },
+  "samp": {
+    "directx": "verified_x86_x64",
+    "gta_installed": false,
+    "netfx3": "Enabled",
+    "directplay": "Enabled",
+    "play_tested": false,
+    "status": "dependencies_ready",
+    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+    "vcredist": "verified_x86_x64_and_2013_x86",
+    "samp_installed": false
+  },
+  "game_environment": {
+    "hypervisor_present": true,
+    "play_tested": false,
+    "windows_server": true,
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "runner": "windows-2022"
+  },
+  "games": {
+    "samp": {
+      "game_dir": null,
+      "gta_installed": false,
+      "status": "dependencies_ready",
+      "samp_installed": false,
+      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji."
+    },
+    "minecraft_bedrock": {
+      "note": "Tidak dipilih",
+      "status": "disabled"
+    },
+    "roblox": {
+      "note": "Roblox mensyaratkan Windows 10/11 desktop 64-bit dan dukungan GPU. Windows Server runner bukan target yang didukung; memasang DX9 tidak mengubah ini.",
+      "status": "unsupported_environment"
+    },
+    "minecraft_java": {
+      "note": "Tidak dipilih",
+      "status": "disabled"
+    }
   }
 }
