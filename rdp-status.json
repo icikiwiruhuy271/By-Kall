@@ -1,25 +1,25 @@
 {
-  "active": false,
-  "hostname": "rdpfree-2",
+  "active": true,
+  "hostname": "rdpfree-3",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "ram_gb": 16.0,
+    "disk_free_gb": 78.7,
     "cpu_threads": 4,
-    "disk_free_gb": 78.7
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "JoyManuel",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-05T22:27:09Z",
-  "expires_at": "2026-11-06T04:22:09Z",
+  "started_at": "2026-11-05T23:26:46Z",
+  "expires_at": "2026-11-06T05:21:46Z",
   "duration_menit": 355,
-  "run_id": "42121559179",
+  "run_id": "42129264432",
   "run_attempt": "1",
-  "run_number": "2",
-  "run_url": "https://github.com/icikiwiruhuy271/By-Kall/actions/runs/42121559179",
+  "run_number": "3",
+  "run_url": "https://github.com/icikiwiruhuy271/By-Kall/actions/runs/42129264432",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -39,74 +39,19 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
+    "mode": "tailscale",
     "tailscale": {
+      "hostname": "rdpfree-3",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "status": "ok",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    },
-    "mode": "tailscale"
+      "magicdns": "rdpfree-3.tailb1a443.ts.net.",
+      "ip": "100.117.71.54",
+      "status": "ok"
+    }
   },
   "media": {
     "wallpaper": "xyverse_configured_for_user_logon",
     "audio_output": "rdp_playback_enabled",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "microphone": "rdp_capture_enabled"
-  },
-  "grafis": {
-    "vulkan": "lavapipe (CPU) / loader vulkan-1.dll tidak ada",
-    "mesa": "26.2.6",
-    "opengl": "llvmpipe (Mesa 26.2.6) - belum terverifikasi",
-    "mode": "software",
-    "files": "vulkan_lvp.dll",
-    "dir": "C:\\XyRDP\\grafis",
-    "adapters": "Microsoft Hyper-V Video",
-    "debug": "loader-tidak-ada",
-    "install": "belum",
-    "loader": "",
-    "note": "Pasang OpenGL software ke System32 gagal (belum). Vulkan lavapipe & WARP tetap aktif; DLL Mesa tersedia di C:\\XyRDP\\grafis\\gl untuk pemakaian per-aplikasi."
-  },
-  "samp": {
-    "directx": "verified_x86_x64",
-    "gta_installed": false,
-    "netfx3": "Enabled",
-    "directplay": "Enabled",
-    "play_tested": false,
-    "status": "dependencies_ready",
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "samp_installed": false
-  },
-  "game_environment": {
-    "hypervisor_present": true,
-    "play_tested": false,
-    "windows_server": true,
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "runner": "windows-2022"
-  },
-  "games": {
-    "samp": {
-      "game_dir": null,
-      "gta_installed": false,
-      "status": "dependencies_ready",
-      "samp_installed": false,
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji."
-    },
-    "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "roblox": {
-      "note": "Roblox mensyaratkan Windows 10/11 desktop 64-bit dan dukungan GPU. Windows Server runner bukan target yang didukung; memasang DX9 tidak mengubah ini.",
-      "status": "unsupported_environment"
-    },
-    "minecraft_java": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    }
-  },
-  "heartbeat_at": "2026-11-05T23:19:24.8292613Z",
-  "stopped_at": "2026-11-05T23:20:41Z"
+    "microphone": "rdp_capture_enabled",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
+  }
 }
