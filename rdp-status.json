@@ -128,5 +128,6 @@
     "os": "Microsoft Windows Server 2022 Datacenter",
     "play_tested": false,
     "windows_server": true
-  }
+  },
+  "heartbeat_at": "2026-11-05T23:37:35.8242057Z"
 }
